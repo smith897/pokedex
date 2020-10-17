@@ -4,42 +4,70 @@
 <head>
   <meta charset='utf-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <link rel='stylesheet' href="styles.css" />
+  <title>PokeDex</title>
 </head>
 
 <body>
   <div class="page">
-    <div class="controls">
-      <h1 id="button">button</h1>
+
+    <div class="pageHeader">
+      <h1 class="pageHeaderText">PokeDex</h1>
+      <div class="controls">
+        <h2 class="pokemonEnterTextInstructions">Enter a Pokemon</h2>
+        <input type="text" id="pokemonEnterText" class="search" onkeydown="search(this)">
+      </div>
     </div>
 
-    <div class="picHolder">
-      <img id="pic">
+    <div class="entryHolder">
+      <div class="row header">
+        <h2 id="number">No. 25</h2>
+        <h1 id="name">Pikachu</h1>
+      </div>
+      <div class="entryBelowHeader">
+        <div class="picHolder">
+          <img id="pic" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+        </div>
+        <div class="entryTextHolder">
+          <div class="row headerRow">
+            <h2 id="summary">Mouse Pokémon</h2>
+          </div>
+          <div class="row firstRow">
+            <div class="gridLeft">
+              <h3 id="typeDescription">Type</h3>
+            </div>
+            <div class="gridRight">
+              <h3 id="type1">Electric</h3>
+              <h3 id="type2"></h3>
+            </div>
+          </div>
+          <div class="row secondRow">
+            <div class="gridLeft">
+              <h3 id="heightDescription">Height</h3>
+            </div>
+            <div class="gridRight">
+              <h3 id="height">0.4m</h3>
+            </div>
+          </div>
+          <div class="row thirdRow">
+            <div class="gridLeft">
+              <h3 id="weightDescription">Weight</h3>
+            </div>
+            <div class="gridRight">
+              <h3 id="weight">6kg</h3>
+            </div>
+          </div>
+          <p id="description">When several of
+            these POKéMON
+            gather, their electricity could
+            build and cause
+            lightning storms.</p>
+        </div>
+      </div>
     </div>
-    <div class="entryTextHolder">
-      <div class="header">
-        <h2 id="number"></h2>
-        <h1 id="name"></h1>
-      </div>
-      <div class="row headerRow">
-        <h2 id="summary"></h2>
-      </div>
-      <div class="row firstRow">
-        <h3 id="typeDescription">Type</h3>
-        <h3 id="type1"></h3>
-        <h3 id="type2"></h3>
-      </div>
-      <div class="row secondRow">
-        <h3 id="heightDescription">Height</h3>
-        <h3 id="height"></h3>
-      </div>
-      <div class="row thirdRow">
-        <h3 id="weightDescription">Weight</h3>
-        <h3 id="weight"></h3>
-      </div>
-      <p id="description"></p>
-    </div>
+
     <div class="footer">
-      <hr/>
+      <hr />
       <div class="links-holder">
         <a class="footer-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Privacy Policy</a>
         <a class="footer-link" href="https://github.com/smith897/pokedex.git">Github Repository</a>
