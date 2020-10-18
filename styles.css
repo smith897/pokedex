@@ -29,9 +29,43 @@ html, body, .page {
   margin-bottom: 5em;
 }
 
+@media only screen and (max-width: 480px) {
+  .pageHeader {
+    margin-bottom: 2em;
+  }
+}
+
 .pageHeaderText {
   font-size: 6em;
   margin-bottom: 0.25em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pageHeaderText {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .pageHeaderText {
+    font-size: 6em;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .pokemonEnterTextInstructions {
+    font-size: 2em;
+  }
+
+  #pokemonEnterText {
+    font-size: 1.5em;
+  }
 }
 
 .entryHolder {
@@ -52,76 +86,158 @@ html, body, .page {
   margin-left: 1em;
 }
 
+@media only screen and (max-width: 480px) {
+  #name, #number {
+    font-size: 1.5em;
+  }
+
+  #number {
+    margin-right: 0.4em;
+    margin-left: 0.2em;
+  }
+
+  #name {
+    margin-left: 0.4em;
+    margin-right: 0.2em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #name, #number {
+    font-size: 2em;
+  }
+}
+
 .entryBelowHeader {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 480px) {
+  .entryBelowHeader {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .entryTextHolder {
   width: 70%;
 }
 
-.picHolder {
-  width: 30%;
+@media only screen and (max-width: 480px) {
+  .entryTextHolder {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-#pic {
-  width: 100%;
+@media only screen and (min-width: 1000px) {
+  .entryTextHolder {
+    font-size: 1.5em;
+  }
 }
 
-#summary {
-  margin-bottom: 0.5em;
-}
+  .picHolder {
+    width: 30%;
+  }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  margin: 0.5em;
-}
+  #pic {
+    width: 100%;
+  }
 
-.gridLeft, .gridRight {
-  display: flex;
-  flex: 1;
-}
+  #summary {
+    margin-bottom: 0.5em;
+  }
 
-.gridLeft {
-  justify-content: center;
-}
+  @media only screen and (max-width: 480px) {
+    #summary {
+      text-align: center;
+    }
+  }
 
-.header {
-  align-items: center;
-  justify-content: center;
-  margin-left: 3em;
-  margin-right: 3em;
-  background-color: #222222;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
-  margin-bottom: 1em;
-}
+  @media only screen and (min-width: 1000px) {
+    #description {
+      margin-bottom: 1em;
+    }
+  }
 
-.headerRow {
-  justify-content: center;
-  margin-bottom: 0.5em;
-}
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em;
+  }
 
-#type1 {
-  margin-right: 1em;
-}
+  .gridLeft, .gridRight {
+    display: flex;
+    flex: 1;
+  }
 
-#description {
-  margin: 1em 3em 1em 3em;
-}
+  @media only screen and (max-width: 480px) {
+    .gridLeft, .gridRight {
+      flex: 0.5;
+      justify-content: center;
+    }
+  }
 
-hr {
-  margin-bottom: 0.5em;
-}
+  .gridLeft {
+    justify-content: center;
+  }
 
-.links-holder {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.5em;
-  padding-top: 0em;
-}
+  .header {
+    align-items: center;
+    justify-content: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: #222222;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    margin-bottom: 1em;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .header {
+      text-align: center;
+      margin-top: 1.5em;
+    }
+  }
+
+  .headerRow {
+    justify-content: center;
+    margin-bottom: 0.5em;
+  }
+
+  #type1 {
+    margin-right: 1em;
+  }
+
+  @media only screen and (max-width: 480px) {
+    #type1 {
+      margin-right: 0.5em;
+    }
+  }
+
+  #description {
+    margin: 1em 3em 1em 3em;
+  }
+
+  @media only screen and (max-width: 480px) {
+    #description {
+      text-align: center;
+      margin: 1em 0em 2em 0em;
+    }
+  }
+
+  hr {
+    margin-bottom: 0.5em;
+  }
+
+  .links-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    padding-top: 0em;
+  }

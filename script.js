@@ -16,7 +16,7 @@ function search(e) {
           document.getElementById('type2').textContent = '';
           document.getElementById('height').textContent = '';
           document.getElementById('weight').textContent = '';
-          document.getElementById('summary').textContent = '';
+          document.getElementById('summary').textContent = 'Please refresh the page and try again';
           document.getElementById('number').textContent = '';
           document.getElementById('description').textContent = '';
           ok = false;
